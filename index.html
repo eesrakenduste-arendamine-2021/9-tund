@@ -10,15 +10,16 @@
     <title>Avaleht</title>
 </head>
 <body>
+    <div id="menu"></div>
+    <hr>
     <div id="ulkirjeldus">Kalkulaator ja mida iganes</div>
     <div id="tehtudul"></div>
-    <div id="git"></div>
+    
     <div id="calckcontainer">
         <div id="slidercontainer">
             <input type="range" min="1" max="120" value="20" id="ageslider">
             <p>Vanus: <span id="agevalue"></span></p>
           </div>
-          <hr>
           <div id="gendercontainer">
             <p>Sugu:</p>
             <input type="radio" id="male" name="gender" value="male" checked="true">
@@ -26,9 +27,9 @@
             <input type="radio" id="female" name="gender" value="female">
             <label for="female">Naine</label><br>
           </div>
-          <p>Pensionini: <span id="pension"></span></p>
+          <span id="pension"></span>
 
     </div>
-    
+    <div id="git"></div>
 </body>
 </html> 

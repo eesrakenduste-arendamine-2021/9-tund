@@ -11,8 +11,8 @@ class index {
  
     init() {
         this.slider = document.getElementById('ageslider').value;
-        console.log(document.getElementById('ageslider').value );
         $("#agevalue").html(this.slider);
+        this.calkPension();
         this.startCalk();
     }
 

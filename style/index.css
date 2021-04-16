@@ -1,1 +1,41 @@
- 
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(46, 46, 48);
+    color: whitesmoke;
+}
+
+
+#calckcontainer{
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+#slidercontainer{
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ageslider{
+    width: 25%;
+  }
+
+#gendercontainer{
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
