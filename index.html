@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Grupp 4</title>
+</head>
+<body>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="menu-item">Avaleht</a></li>
+                <li><a href="team.html" class="menu-item">Tiim</a></li>
+                <li><a href="contact.html" class="menu-item">Kontakt</a></li>
+            </ul>
+        </nav>
+        <section class="content">
+            <h1>Avaleht</h1>
+            <h3>Pensioni kalkulaator</h3>
+            <p>Sisestage sugu:</p>
+            <input type="radio" id="male" name="gender" value="male"><label for="male">Mees</label>
+            <input type="radio" id="female" name="gender" value="female"><label for="female">Naine</label>
+            <p>Sisestage vanus:</p>
+            <div class="ageSlider">
+                <input type="range" id="ageInput" name="ageInput" min="0" max="120" value="0"
+                oninput="amount.value=ageInput.value">                                                       
+                <output id="amount" name="amount" for="ageInput">0</output>
+                <br>
+                <button id="button">Arvuta</button>
+            </div>
+        </section>
+        <footer>
+            <p>Autorid: Jan-Erik Läänesaar, Anett Rüdja, Marilii Saar, Tanel Volkov</p>
+            <div class="break"></div>
+            <a href="https://github.com/mariliisaar/9-tund" target="_blank">Github</a>
+        </footer>
+    </main>
+</body>
+</html>
