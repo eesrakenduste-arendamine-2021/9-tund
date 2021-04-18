@@ -18,19 +18,27 @@
             </ul>
         </nav>
         <section class="content">
-            <h1>Avaleht</h1>
-            <h3>Pensioni kalkulaator</h3>
-            <p>Sisestage sugu:</p>
-            <input type="radio" id="male" name="gender" value="male"><label for="male">Mees</label>
-            <input type="radio" id="female" name="gender" value="female"><label for="female">Naine</label>
-            <p>Sisestage vanus:</p>
-            <div class="ageSlider">
-                <input type="range" id="ageInput" name="ageInput" min="0" max="120" value="0"
-                oninput="amount.value=ageInput.value">                                                       
-                <output id="amount" name="amount" for="ageInput">0</output>
-                <br>
-                <button id="button">Arvuta</button>
-            </div>
+        <h1>Avaleht</h1>
+        <h3>Pensioni kalkulaator</h3>
+            <div class="pensioncalculator">
+				<p>Valige sugu:</p>
+				    <input type="radio" id="maleGender" name="gender" value="0" 
+				    onchange="updateResult(document.getElementById('ageslider').value, this.value);" checked>
+				    <label for="maleGender">Mees</label>
+				<br>
+				    <input type="radio" id="femaleGender" name="gender" value="1" 
+				    onchange="updateResult(document.getElementById('ageslider').value, this.value);">
+				    <label for="femaleGender">Naine</label>
+				<br>
+				<p>Sisestage vanus:</p>
+				    <input type="range" id="ageslider" value="0" min="0" max="120" 
+				    oninput="this.nextElementSibling.value = this.value" 
+				    onchange="updateResult(this.value, document.getElementById('maleGender').value);">
+				    <output>0</output>
+				<br>
+				<br>
+				<span id="result"></span>
+			</div>
         </section>
         <footer>
             <p>Autorid: Jan-Erik Läänesaar, Anett Rüdja, Marilii Saar, Tanel Volkov</p>
