@@ -17,4 +17,30 @@ let mapProp= {
 let map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 }
 
+function updateResult(age){
+    
+var gender = document.getElementById('maleGender').checked;
 
+if(gender == true){
+	
+    if(age >= 65){ 
+        
+        document.getElementById("result").innerHTML = "Olete pensioniealine";
+        
+		} else {
+			document.getElementById("result").innerHTML = "Te ei ole veel pensioniealine";
+            
+		}
+		
+	} else {
+        
+		if(age >= 63){
+			document.getElementById("result").innerHTML = "Olete pensioniealine"; 
+            
+		} else {
+			document.getElementById("result").innerHTML = "Te ei ole veel pensioniealine";
+            
+		}
+	}
+
+}
