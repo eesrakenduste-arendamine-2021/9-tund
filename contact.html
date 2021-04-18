@@ -19,14 +19,40 @@
         </nav>
         <section class="content">
             <form id="contact">
-                <p><label>Eesnimi: <input type="text"></label></p>
-                <p><label>Perekonnanimi: <input type="text"></label></p>
-                <p><label>Telefoninumber: <input type="text"></label></p>
-                <p><label>E-mail: <input type="text"></label></p>
-                <p><label>Lisainfo: <input type="text"></label></p>
+                <div>
+                    <p>Nimi</p>
+                    <input type="text" id="name" placeholder="Nimi">
+                    <span class="error_form" id="name_error_message"></span>
+                </div>
+                <div>
+                    <p>E-mail</p>
+                    <input type="text" id="email" placeholder="E-mail">
+                    <span class="error_form" id="email_error_message"></span>
+                </div>
+                <div>
+                    <p>Telefoninumber</p>
+                    <input type="text" id="pnumber" placeholder="Telefoninumber">
+                    <span class="error_form" id="pnumber_error_message"></span>
+                </div>
+                <div>
+                    <p>Lisainfo</p>
+                    <input type="text" id="info" placeholder="Lisainfo">
+                    <span class="error_form" id="info_error_message"></span>
+                </div>
+                <input type="submit" value="Salvesta">
             </form>
-            <div id="googleMap"></div>
-            <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+            <div class="gmap_canvas">
+                <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=porto&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+            <div>
+                <h3>
+                    Meie kontakt:
+                </h3>
+                <p>Telefoninumber: +372 548 479 23</p>
+                <p>Aadress: Narva mnt. 105</p>
+                <p>E-mail: grupp.neli@gmail.com</p> 
+            </div>
+        </div>
         </section>
     </main>
     <footer>
