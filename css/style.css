@@ -210,6 +210,10 @@ input:focus {
     outline-color: #8b49ab;
 }
 
+.error_form {
+    color: #8b49ab;
+}
+
 @media screen and (max-width: 400px) {
     .content {
         width: calc(100% - 20px);
