@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/script.js" defer></script>
+    <script src="js/team.js" defer></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Grupp 4</title>
+    <title>Meeskond</title>
 </head>
 <body>
     <main>
@@ -17,25 +17,57 @@
                 <li><a href="contact.html" class="menu-item">Kontakt</a></li>
             </ul>
         </nav>
-        <section class="content">
-            <div id="review">Ülevaated</div>
-            <div class="slide-container">
-                <span id="slider-image-1"></span>
-                <span id="slider-image-2"></span>
-                <span id="slider-image-3"></span>
-                <span id="slider-image-4"></span>
-                <div class="image-container">
-                    <img src="img/tanel.jpg" class="slider-image">
-                    <img src="img/marilii.jpg" class="slider-image">
-                    <img src="img/anett.jpg" class="slider-image">
-                    <img src="img/jan.jpg" class="slider-image">
+        <section class="container">
+            <h1 class="title">Ülevaade</h1>
+            <div class="slideshow-container">
+
+            <div class="person fade">                                                                                        
+                <div class="pic">
+                    <img src="img/tanel.jpg" alt="tanel">
                 </div>
-                <div class="button-container">
-                    <a href="#slider-image-1" class="slider-button"></a>
-                    <a href="#slider-image-2" class="slider-button"></a>
-                    <a href="#slider-image-3" class="slider-button"></a>
-                    <a href="#slider-image-4" class="slider-button"></a>
+                <h2 class="name">Tanel Volkov</h2>
+                <h3 class="job">Tiimileht</h3>
+                <p class="description">"Beebiporgandid on maitsvad"</p>
+            </div>
+
+            <div class="person fade">
+                <div class="pic">
+                    <img src="img/marilii.jpg" alt="marilii">
                 </div>
+                <h2 class="name">Marilii Saar</h2>
+                <h3 class="job">Disain</h3>
+                <p class="description">"Beebiporgandid on täis vitamiine"</p>
+            </div>
+
+            <div class="person fade">
+                <div class="pic">
+                    <img src="img/anett.jpg" alt="anett">
+                </div>
+                <h2 class="name">Anett Rüdja</h2>
+                <h3 class="job">Kontakt</h3>
+                <p class="description">"Beebiporgandid toetavad silmanägemist"</p>
+            </div>
+
+            <div class="person fade">
+                <div class="pic">
+                    <img src="img/jan.jpg" alt="jan">
+                </div>
+                <h2 class="name">Jan-Erik Läänesaar</h2>
+                <h3 class="job">Avaleht</h3>
+                <p class="description">"Beebiporgandid sisaldavad vähe kaloreid"</p>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        </section>
+        <section class="video">
+            <h1 class="title">Meie lemmik video</h1>
+            <div class="youtube">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/uwmeH6Rnj2E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </section>
         <footer>

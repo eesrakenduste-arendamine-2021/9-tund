@@ -85,59 +85,84 @@ h3 {
     height: 0;
 }
 
-button{
-    background-color: #2333d1; 
-    color: white;
-    padding: 10px 16px;
-    border: none;
-	margin: 12px;
-    border-radius: 15px;
-	justify-content: center;
+* {box-sizing: border-box}
+.person {display: none}
+img {vertical-align: middle;}
+
+.title{
+  justify-content: center;
+  display: flex;
+}
+.name{
+  color: #5b7c9f;
+  display: flex;
+  justify-content: center;
+}
+.pic {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+.pic img {
+  border-radius: 50%;
+  border: 3px solid #5b7c9f;
+  object-fit: cover;
+}
+.job,.description{
+  width: 90%;
+  margin: auto;
+  justify-content: center;
+  display: flex;
 }
 
-button:hover{
-    background-color: #2588c9;
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
 
-.slide-container{
-    width: 800px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
-    text-align: center;
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
-.image-container{
-    width: 2400px;
-    height: 600px;
-    position: relative;
-    transition: left 2s;
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
-.button-container{
-    top: -20px;
-    position: relative;
+
+.prev:hover, .next:hover {
+  background-color: rgba(137, 212, 235, 0.8);
 }
-.slider-button{
-    display: inline-block;
-    height: 10px;
-    width: 10px;
-    border-radius: 5px;
-    background-color: white;
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
-.slider-image{
-    float: left;
-    margin: 0px;
-    padding: 0px;
+
+@-webkit-keyframes fade {
+  from {opacity: .2} 
+  to {opacity: 1}
 }
-#slider-image-1:target ~ .image-container{
-    left: 0px;
+
+@keyframes fade {
+  from {opacity: .2} 
+  to {opacity: 1}
 }
-#slider-image-2:target ~ .image-container{
-    left: -800px;
-}
-#slider-image-3:target ~ .image-container{
-    left: -1600px;
-}
-#slider-image-4:target ~ .image-container{
-    left: -2400px;
+
+.youtube{
+  justify-content: center;
+  display: flex;
 }
