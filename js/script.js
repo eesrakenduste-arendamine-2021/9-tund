@@ -98,18 +98,21 @@ if(gender == true){
         
         document.getElementById("result").innerHTML = "Olete pensioniealine";
         
-		} else {
-			document.getElementById("result").innerHTML = "Te ei ole veel pensioniealine";
-            
-		}
+		} else if (age == 64) {
+         document.getElementById("result").innerHTML = "Teil on pensionini aega " + (65 - age) + " aasta";
+      } else {
+         document.getElementById("result").innerHTML = "Teil on pensionini aega " + (65 - age) + " aastat";
+      }
 		
 	} else {
         
 		if(age >= 63){
 			document.getElementById("result").innerHTML = "Olete pensioniealine"; 
             
-		} else {
-			document.getElementById("result").innerHTML = "Te ei ole veel pensioniealine";
+		} else if (age == 62) {
+         document.getElementById("result").innerHTML = "Teil on pensionini aega " + (63 - age) + " aasta";
+      } else {
+			document.getElementById("result").innerHTML = "Teil on pensionini aega " + (63 - age) + " aastat";
             
 		}
 	}

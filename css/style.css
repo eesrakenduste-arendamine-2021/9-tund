@@ -25,7 +25,16 @@ main {
     margin: auto;
 }
 
-.content, footer {
+.container, .video { 
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+.content, footer, .container, .video {
     flex-shrink: 0;
 }
 
@@ -78,6 +87,10 @@ h1 {
 h3 {
     font-size: 1.5em;
     color: #5b7c9f;
+}
+
+h3 + p {
+    margin-top: 0;
 }
 
 .break {
@@ -165,4 +178,41 @@ img {vertical-align: middle;}
 .youtube{
   justify-content: center;
   display: flex;
+}
+
+.contact, .home {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact > form, .calculator {
+    margin-right: 50px;
+    max-width: calc(100% - 50px);
+}
+
+.submit-btn {
+    margin: 10px 0;
+    background-color: #5b7c9f;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: none;
+}
+
+.submit-btn:hover {
+    background-color: #8b49ab;
+    cursor: pointer;
+}
+
+input:focus {
+    outline-color: #8b49ab;
+}
+
+@media screen and (max-width: 400px) {
+    .content {
+        width: calc(100% - 20px);
+        padding: 0 10px;
+    }
 }
