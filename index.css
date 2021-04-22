@@ -1,0 +1,158 @@
+#gender {
+    width: 11%;
+    height: 15px;
+    -webkit-appearance: none;
+    border-radius: 5px;  
+    background: #ffffff;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+#gender::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #000000;
+    cursor: pointer;
+}
+
+#male {
+    padding-right: 9%;
+}
+
+body {
+    background-color: #283335;
+    color: #91b979;
+    /*text-align: center;*/
+    font-family: Comfortaa;
+}
+
+#slider1 {
+    padding-bottom: .5%;
+}
+
+#slider2 {
+    padding-top: 3%;
+    padding-bottom: .5%;
+}
+
+#age {
+    width: 40%;
+    height: 15px;
+    -webkit-appearance: none;
+    border-radius: 5px;  
+    background: #ffffff;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+#age::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%; 
+    background: #5056a7;
+    cursor: pointer;
+}
+
+#lowest {
+    padding-right: 38%;
+}
+
+#resultBox {
+    padding-top: 2%;
+}
+
+#github {
+    padding-top: 4%;
+    margin: auto;
+    margin-top: 25vh;
+    width: 7vw;
+    background-color: #323b4e;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#taskList {
+    margin: auto;
+    margin-top: 30vh;
+    width: 25vw;
+    background-color: #323b4e;
+    padding: 14px 20px;
+    border-radius: 30px;
+}
+
+#task {
+    padding-bottom: 4%;
+    padding-left: 30%;
+    margin: auto;
+    margin-top: 30vh;
+    width: 35vw;
+    background-color: #323b4e;
+    padding: 14px 20px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+#next1 {
+    margin: auto;
+    margin-top: 2vh;
+    width: 4vw;
+    background-color: #ffffff;
+    padding: 14px 20px;
+    border-radius: 10px;
+    color: #323b4e;
+    cursor: pointer;
+}
+
+#next2 {
+    margin: auto;
+    margin-top: 2vh;
+    width: 4vw;
+    background-color: #ffffff;
+    padding: 14px 20px;
+    border-radius: 10px;
+    color: #323b4e;
+    cursor: pointer;
+}
+
+#next3 {
+    margin: auto;
+    margin-top: 2vh;
+    width: 4vw;
+    background-color: #ffffff;
+    padding: 14px 20px;
+    border-radius: 10px;
+    color: #323b4e;
+    cursor: pointer;
+    text-align: center;
+}
+
+#difficulties {
+    padding-left: 40%;
+    padding-right: 42%;
+    margin: auto;
+    margin-top: 30vh;
+    width: 25vw;
+    background-color: #323b4e;
+    padding: 14px 20px;
+    border-radius: 30px;
+}
+
+#pensionCalc {
+    padding-bottom: 4%;
+    margin-top: 30vh;
+    text-align: center;
+}
+
+.titles {
+    text-align: center;
+}

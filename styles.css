@@ -1,0 +1,27 @@
+.contactform {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.contactbody {
+  padding: 70px 30%;
+}
+.contactinput {
+  font-size: 24px;
+  padding-left: 10px;
+}
+
+.error::placeholder {
+  color: red;
+}
+.fakeContact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  background-color: #283335;
+  color: #91b979;
+ 
+  font-family: Comfortaa;
+}

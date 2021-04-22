@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Comfortaa"
+    />
+    <style data="test" type="text/css"></style>
+    <script src="index.js" defer></script>
+    <title>Grupitöö</title>
+  </head>
+  <body>
+    <!--Nav-->
+<div id="nav-placeholder">
+
+</div>
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("header.html");
+});
+</script>
+<!--Nav-->
+    <div id="pensionCalc">
+      <div id="sliders">
+        <div id="slider1">
+          <span id="male">Mees</span><span id="female">Naine</span>
+          <br />
+          <input type="range" min="1" max="2" name="Sugu" id="gender" />
+        </div>
+        Valitud sugu: <span id="selectedGender">SUGU</span>
+        <div id="slider2">
+          <span id="lowest">20</span><span id="highest">80</span>
+          <br />
+          <input type="range" min="20" max="80" name="Vanus" id="age" />
+        </div>
+        Valitud vanus: <span id="selectedAge">VANUS</span>
+      </div>
+      <div id="resultBox">
+        Tulemus:
+        <br />
+        <span id="result">TULEMUS</span>
+      </div>
+    </div>
+    <div id="task">
+      Ülesande kirjeldus:
+      <br /><br />
+      Luua grupitööna veebileht, kus on avaleht ning 2 alamlehte -<br />tiimiliikmete
+      slaider ja kontaktileht. Lisaks sellele teha igal alamlehel<br />töötav
+      navbar ning kõik lehed normaalselt skaleeruvaks.<br />
+      Avalehel tuleb kuvada pensioniea kalkulaatorit, ülesande kirjeldust,
+      tehtud ülesandeid, raskusi mis ülesannetega tekkisid ning Githubi
+      repositooriumi linki.<br />
+      Tiimiliikmete slaideris peaks olema iga inimese kohta pilt,<br />nimi,
+      quote ja lemmik YouTube video embedditult.<br />
+      Kontaktilehel on vaja kontaktvormi nime, telefoni, emaili ja lisainfo
+      väljadega; embedded Google Mapsi kasti meeldiva sihtkohaga ja fiktiivseid
+      kontaktandmeid.<br />
+      <div id="next1">Järgmine</div>
+    </div>
+    <div id="taskList">
+      <div class="titles">Tehtud ülesanded:</div>
+      <ul>
+        <li>Avaleht</li>
+        <li>Pensioniea kalkulaator</li>
+        <li>Navbar/menüü</li>
+        <li>Tiimileht</li>
+        <li>Kontaktileht</li>
+      </ul>
+      <div id="next2">Järgmine</div>
+    </div>
+    <div id="difficulties">
+      <div class="titles">Mis valmistas raskusi?</div>
+      <ul>
+        <li>YouTube video embeddimine</li>
+        <li>Pensioniea arvutamisest arusaamine</li>
+        <li>Navbari tehniline pool</li>
+        <li>Disain</li>
+      </ul>
+      <div id="next3">Sulge</div>
+    </div>
+    <div id="github">Githubi repositoorium</div>
+  </body>
+</html>
