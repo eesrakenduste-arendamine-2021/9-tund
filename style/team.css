@@ -9,8 +9,8 @@ body {
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 300px;
-    height: 500px;
+    width: 150%;
+    height: 150%;
     margin: 16px;
     padding: 8 8px;
 }
@@ -53,9 +53,13 @@ body {
 /*white box */
 
 .slider {
-    position: fixed;
-    margin: auto;
     padding: 16 16px;
+    position: absolute;
+    margin: auto;
+    top: 30%;
+    left: 49%;
+    margin-top: -250px;
+    margin-left: -250px;
 }
 
 
@@ -74,6 +78,7 @@ body {
     cursor: pointer;
     position: absolute;
     top: 50%;
+    left: 130%;
     width: auto;
     margin-top: -22px;
     padding: 16px;
@@ -90,7 +95,7 @@ body {
 }
 
 .slider .previous {
-    left: 0;
+    left: 15%;
     border-radius: 3px 0 0 3px;
 }
 
@@ -107,7 +112,7 @@ body {
 .youtube {
     position: absolute;
     bottom: 0;
-    left: 50%;
+    left: 52%;
     margin-top: -250px;
     margin-left: -250px;
 }
