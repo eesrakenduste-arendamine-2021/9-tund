@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script/kontaktileht.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"async></script>
+    <link rel="stylesheet" href="style/index.css" />
+    <title>Kontatleht</title>
+</head>
+<body>
+    <hr>
+    <div id="topnav">
+        <a href="index.html">Avaleht</a>
+        <a href="teampage.html">Tiimileht</a>
+        <a href="kontaktileht.html" id="active">Kontaktid</a>
+    </div>
+    <hr>
+    <div class="main">
+    <!-- <div id="Naigatsioon">
+        <button id= "Avaleht">Avaleht</button>
+        <button id= "Kontaktleht">Kontaktleht</button>
+    </div> -->
+    <form id="contact" method="post" action="">
+        <div>
+            <input type="text" id="name" name="name" placeholder="nimi"></input>
+        <div>
+            <input type="text" id="number" name="number" placeholder="telefoni number"></input>
+        </div>
+        <div>
+            <input type="email" id="email" name="email" placeholder="e-mail"></input>				
+        </div>											
+        <div>
+            <textarea id="message" name="message" cols="30" rows="10" placeholder="lisainfo"></textarea>											
+        </div>					
+        <div>		
+            <button type="submit" value="submit" class="button" id="submit">Salvesta</button>
+        </div>
+    </form>
+    <div id="google-maps">
+        <p>Sooviksime meeskonnaga reisida all viidatud kohta</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5876.099084932985!2d150.74124314973068!3d68.39575737103092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5bcd3dbb90d077df%3A0x1e8d4ed208753448!2sEbyakh%2C%20Sahha%2C%20Venemaa%2C%20678783!5e0!3m2!1set!2see!4v1618561813082!5m2!1set!2see" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="kontaktandmed">
+        <p>Kontaktandmed, tel: 54541010, aadress: Männi tn 5-6, e-mail: kodutöö@gmail.com</p>
+    </div>
+    </div>
+    <div id="git">
+        <a href="https://github.com/karljanar/9-tund" target="_blank">
+            <img src="img/github.png" alt="github" id="github" />
+        </a>
+    </div>
+    </body>
+</body>
+</html>

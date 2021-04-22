@@ -1,80 +1,77 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Tiim</title>
+		<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+		<script src="script/team.js" defer></script>
+		<link rel="stylesheet" href="style/team.css" />
+	</head>
+	<h1>MEIE TIIM</h1>
 
-<head>
-    <meta charset="utf-8" />
-    <title>Tiim</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="script/team.js" defer></script>
-    <link rel="stylesheet" href="style/team.css">
-</head>
-<h1>MEIE TIIM</h1>
+	<body>
+		<hr />
+		<div id="topnav">
+			<a href="index.html">Avaleht</a>
+			<a href="teampage.html" id="active">Tiimileht</a>
+			<a href="kontaktileht.html">Kontaktid</a>
+		</div>
+		<hr />
+		<div class="slider">
+			<div class="card">
+				<img src="img/lisanne.jpg" alt="Lisanne" />
+				<div class="container">
+					<h2>Lisanne Järv</h2>
+					<p class="title">Designer</p>
+					<p>Tallinna Ülikooli Informaatika eriala tudeng.</p>
+					<p>example@example.com</p>
+					<p><button class="button">Contact</button></p>
+				</div>
+			</div>
 
-<body>
-    <hr>
-    <div id="topnav">
-        <a href="index.html">Avaleht</a>
-        <a href="teampage.html" id="active">Tiimileht</a>
-        <a href="Kontaktleht.html">Kontaktid</a>
-    </div>
-    <hr>
-    <div class="slider">
-        <div class="card">
-            <img src="assets/lisanne.jpg" alt="Lisanne">
-            <div class="container">
-                <h2>Lisanne Järv</h2>
-                <p class="title">Designer</p>
-                <p>Tallinna Ülikooli Informaatika eriala tudeng.</p>
-                <p>example@example.com</p>
-                <p><button class="button">Contact</button></p>
-            </div>
-        </div>
+			<div class="card">
+				<img src="img/reimo.jpg" alt="Reimo" />
+				<div class="container">
+					<h2>Reimo Rämman</h2>
+					<p class="title">Designer</p>
+					<p>Tallinna Ülikooli Informaatika eriala tudeng.</p>
+					<p>example@example.com</p>
+					<p><button class="button">Contact</button></p>
+				</div>
+			</div>
 
+			<div class="card">
+				<img src="img/karljanar.jpg" alt="John" />
+				<div class="container">
+					<h2>Karl Janar Kinkar</h2>
+					<p class="title">Designer</p>
+					<p>Tallinna Ülikooli Informaatika eriala tudeng.</p>
+					<p>example@example.com</p>
+					<p><button class="button">Contact</button></p>
+				</div>
+			</div>
 
-        <div class="card">
-            <img src="assets/reimo.jpg" alt="Reimo">
-            <div class="container">
-                <h2>Reimo Rämman</h2>
-                <p class="title">Designer</p>
-                <p>Tallinna Ülikooli Informaatika eriala tudeng.</p>
-                <p>example@example.com</p>
-                <p><button class="button">Contact</button></p>
-            </div>
-        </div>
+			<div class="card">
+				<img src="img/ekkealar.jpg" alt="ekke" />
+				<div class="container">
+					<h2>Ekke Alar Toomingas</h2>
+					<p class="title">Designer</p>
+					<p>Tallinna Ülikooli Informaatika eriala tudeng.</p>
+					<p>example@example.com</p>
+					<p><button class="button">Contact</button></p>
+				</div>
+			</div>
 
-
-
-        <div class="card">
-            <img src="assets/karljanar.jpg" alt="John">
-            <div class="container">
-                <h2>Karl Janar Kinkar</h2>
-                <p class="title">Designer</p>
-                <p>Tallinna Ülikooli Informaatika eriala tudeng.</p>
-                <p>example@example.com</p>
-                <p><button class="button">Contact</button></p>
-            </div>
-        </div>
-
-
-
-        <div class="card">
-            <img src="https://goblackfin.com/wp-content/uploads/2015/02/Man-working-from-home.jpg" alt="github" id="github">
-            <div class="container">
-                <h2>Ekke Alar Toomingas</h2>
-                <p class="title">Designer</p>
-                <p>Tallinna Ülikooli Informaatika eriala tudeng.</p>
-                <p>example@example.com</p>
-                <p><button class="button">Contact</button></p>
-            </div>
-        </div>
-
-
-        <a class="previous" onclick="previousSlide()">&#10094;</a>
-        <a class="next" onclick="nextSlide()">&#10095;</a>
-    </div>
-
-</body>
-
-<iframe width="420" height="315" src="https://www.youtube.com/embed/MEg-oqI9qmw" class="youtube"></iframe>
-
+			<a class="previous" onclick="previousSlide()">&#10094;</a>
+			<a class="next" onclick="nextSlide()">&#10095;</a>
+		</div>
+		<div class="youtube">
+			<iframe width="420" height="315" src="https://www.youtube.com/embed/MEg-oqI9qmw"></iframe>
+		</div>
+		<div id="git">
+			<a href="https://github.com/karljanar/9-tund" target="_blank">
+				<img src="img/github.png" alt="github" id="github" />
+			</a>
+		</div>
+	</body>
 </html>
