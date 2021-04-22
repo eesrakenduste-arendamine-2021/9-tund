@@ -1,13 +1,7 @@
-/* Display the columns below each other instead of side by side on small screens 
-  @media screen and (max-width: 650px) {
-    .column {
-      width: 100%;
-      display: block;
-    }
-  }*/
-
 body {
     text-align: center;
+    background-color: #555;
+    color: beige;
 }
 
 
@@ -15,17 +9,16 @@ body {
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    float: center;
-    width: 500px;
+    width: 300px;
     height: 500px;
-    margin-bottom: 16px;
-    padding: 0 8px;
+    margin: 16px;
+    padding: 8 8px;
 }
 
 .container {
-    padding: 0 16px;
-    width: 100%;
     text-align: center;
+    width: 50%;
+    margin: auto;
 }
 
 .container::after,
@@ -37,13 +30,14 @@ body {
 
 .title {
     color: grey;
+    text-align: center;
 }
 
 .button {
     border: none;
     outline: 0;
     display: inline-block;
-    padding: 8px;
+    padding-left: 8px;
     color: white;
     background-color: #000;
     text-align: center;
@@ -59,21 +53,20 @@ body {
 /*white box */
 
 .slider {
-    width: 40%;
     position: fixed;
     margin: auto;
-    height: 500px;
+    padding: 16 16px;
 }
 
 
 /*changes picture*/
 
 .slider .card img {
-    width: 50%;
-    height: 50%;
+    width: 300px;
+    height: 400px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 16px;
+    margin: auto;
 }
 
 .slider .previous,
