@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Grupp 4</title>
+</head>
+<body>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="menu-item">Avaleht</a></li>
+                <li><a href="team.html" class="menu-item">Tiim</a></li>
+                <li><a href="contact.html" class="menu-item">Kontakt</a></li>
+            </ul>
+        </nav>
+        <section class="content">
+        <h1>Avaleht</h1>
+        <h3>Ülesanne:</h3>
+        <p>Luua veebileht, kus on avaleht pensionikalkulaatoriga, tiimileht slaideriga ja kontaktileht vormiga</p>
+        <div class="home">
+            <div class="calculator">
+                <h3>Pensioni kalkulaator</h3>
+                <div class="pensioncalculator">
+                    <p>Valige sugu:</p>
+                        <input type="radio" id="maleGender" name="gender" value="0" 
+                        onchange="updateResult(document.getElementById('ageslider').value, this.value);" checked>
+                        <label for="maleGender">Mees</label>
+                    <br>
+                        <input type="radio" id="femaleGender" name="gender" value="1" 
+                        onchange="updateResult(document.getElementById('ageslider').value, this.value);">
+                        <label for="femaleGender">Naine</label>
+                    <br>
+                    <p>Sisestage vanus:</p>
+                        <input type="range" id="ageslider" value="0" min="0" max="120" 
+                        oninput="this.nextElementSibling.value = this.value" 
+                        onchange="updateResult(this.value, document.getElementById('maleGender').value);">
+                        <output>0</output>
+                    <br>
+                    <br>
+                    <span id="result"></span>
+                </div>
+            </div>
+            <div>
+                <h3>Ülesannete nimekiri</h3>
+                <ul>
+                    <li>Avaleht:
+                        <ul>
+                            <li>Ülesande kirjeldus</li>
+                            <li>Tehtud ülesannete list</li>
+                            <li>Link githubi repositooriumile (footeris)</li>
+                            <li>pensionikalkulaator</li>
+                        </ul>
+                    </li>
+                    <li>Tiimileht:
+                        <ul>
+                            <li>Tiimiliikmete slaider</li>
+                            <li>Youtube'i video</li>
+                        </ul>
+                    </li>
+                    <li>Kontaktileht:
+                        <ul>
+                            <li>Vorm, kus toimub kohustuslike väljade kontroll</li>
+                            <li>Google Maps</li>
+                            <li>kontaktandmed</li>
+                        </ul>
+                    </li>
+                    <li>Üldine:
+                        <ul>
+                            <li>Menüü</li>
+                            <li>Skaleeruv kujundus</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </section>
+        <footer>
+            <p>Autorid: Jan-Erik Läänesaar, Anett Rüdja, Marilii Saar, Tanel Volkov</p>
+            <div class="break"></div>
+            <a href="https://github.com/mariliisaar/9-tund" target="_blank">Github</a>
+        </footer>
+    </main>
+</body>
+</html>
