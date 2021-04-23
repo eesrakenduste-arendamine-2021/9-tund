@@ -1,0 +1,15 @@
+
+.pensioncontainer {
+    background-color:lightpink;
+}
+
+#pensionStatus{
+    background-color: rgb(255, 255, 255);
+    border: 1px transparent white;
+    border-radius: 3px;
+}
+
+input[type="range"] {
+    border: none;
+    box-shadow: none;
+}
