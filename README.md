@@ -1,3 +1,5 @@
+https://www.tlu.ee/~ekkealar/eesrakendus-gruppitoo-leht/index.html
+
 # 9-tund
 
 

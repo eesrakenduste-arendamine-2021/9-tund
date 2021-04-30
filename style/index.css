@@ -1,0 +1,137 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #2e3440;
+	color: whitesmoke;
+	width: 100%;
+	height: 100%;
+}
+
+#topnav {
+	background-color: #2e3440;
+	overflow: hidden;
+	text-align: center;
+}
+
+#topnav a {
+	float: none;
+	color: #f5f5f5;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 130%;
+}
+
+#topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+#topnav a#active {
+	text-decoration: underline;
+}
+
+#calckcontainer {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#slidercontainer {
+	width: 100%;
+	font-size: 130%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#ageslider {
+	width: 30%;
+}
+
+#gendercontainer {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	font-size: 110%;
+}
+
+#pension {
+	font-size: 150%;
+}
+
+#taskdescription {
+	height: 7%;
+	font-size: 130%;
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+#tasklist {
+	height: 7%;
+	font-size: 120%;
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+#github {
+	position: fixed;
+	bottom: 0px;
+	left: 10%;
+	width: 5vw;
+}
+
+/*-------------kontakt------------------*/
+
+.main {
+	padding-left: 20%;
+	padding-right: 20%;
+	text-align: center;
+}
+
+#name {
+	width: 35%;
+	height: 10%;
+	margin: 0.5%;
+}
+
+#number {
+	width: 35%;
+	height: 10%;
+	margin: 0.5%;
+}
+
+#email {
+	width: 35%;
+	height: 10%;
+	margin: 0.5%;
+}
+
+#message {
+	width: 35%;
+	height: 10%;
+	margin: 0.5%;
+	resize: none;
+}
+
+button {
+	margin: 1%;
+	padding: 2%;
+	width: 20%;
+	height: 20%;
+	border: none;
+	text-align: center;
+	display: inline-block;
+	background-color: #5d677c;
+	color: whitesmoke;
+}
+
+button:hover {
+	background-color: #3a445a;
+	color: rgb(214, 214, 214);
+}
