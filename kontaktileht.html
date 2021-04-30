@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+    <script src="contactscript.js" defer></script>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Comfortaa"
+    />
+    <title>Kontaktileht</title>
+  </head>
+  <body>
+ <!--Nav-->
+<div id="nav-placeholder">
+
+</div>
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("header.html");
+});
+</script>
+<!--Nav-->
+<div class="contactbody">
+
+    <form class="contactform">
+      <input class="contactinput" type="text" placeholder="Nimi" />
+      <input class="contactinput" type="text" placeholder="Telefon" />
+      <input class="contactinput" type="text" placeholder="Email" />
+      <input class="contactinput" type="text" placeholder="Lisainfo" />
+      <input class="submitInput" type="submit" />
+      <label class="errorLabelTelefon"></label>
+      <label class="errorLabelEmail"></label>
+    </form>
+    <label>Peale koroonat taha minna siia:</label>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d181.04919152326391!2d4.8974301872488555!3d52.37227207067785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609b884575367%3A0x3509f467a8d39c68!2sDe%20Wallen%2C%20Amsterdam%2C%20Netherlands!5e0!3m2!1sen!2see!4v1619124006575!5m2!1sen!2see"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+    ></iframe>
+    <div class="fakeContact">
+      <label class="">+372 6457385 | 745 Leningrad Way | alo@hot.ee</label>
+    </div>
+</div>
+  </body>
+</html>
